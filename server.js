@@ -21,6 +21,7 @@ app.get("/check", async (req, res) => {
           delivery_postcode: pincode,
           cod: 0,
           weight: 0.5,
+          mode: 'Surface',
         },
         headers: {
           Authorization: `Bearer ${SHIPROCKET_TOKEN}`,
